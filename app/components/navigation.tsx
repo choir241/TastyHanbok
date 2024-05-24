@@ -1,4 +1,4 @@
-const Navigation = () => {
+export default function Navigation (){
     return ( <nav>
                 <a href="/">Home</a>
                 <a href="/Menu">Menu</a>

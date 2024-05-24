@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import Button from './button.tsx';
 
-const Header = () => {
+export default function Header (){
     return (
         <header>
             <h1>TastyHanbok</h1>
