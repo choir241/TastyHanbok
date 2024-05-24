@@ -1,4 +1,4 @@
-const Navigation = () => {
+export default function Navigation(){
   const navLinks = [
     { text: "Home", link: "/" },
     { text: "Menu", link: "/Menu" },
