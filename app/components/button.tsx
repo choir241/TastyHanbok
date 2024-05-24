@@ -4,7 +4,7 @@ interface ButtonProps {
     onClick: () => void;
 }
 
-const Button = ({classNames, text, onClick}: ButtonProps) => {
+export default function Button ({classNames, text, onClick}: ButtonProps){
     return <button className = {classNames} onClick = {() => onClick()}>
                 {text}
            </button>
