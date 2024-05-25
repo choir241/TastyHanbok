@@ -10,7 +10,7 @@ export default function Navigation(){
   return (
     <nav>
       {navLinks.map((ele: any) => {
-        return <a href={ele.link}>{ele.text}</a>;
+        return <a key = {ele.text} href={ele.link}>{ele.text}</a>;
       })}
     </nav>
   );
