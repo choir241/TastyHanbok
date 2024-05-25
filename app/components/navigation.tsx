@@ -1,10 +1,17 @@
-export default function Navigation (){
-    return ( <nav>
-                <a href="/">Home</a>
-                <a href="/Menu">Menu</a>
-                <a href="/Reservation">Reservation</a>
-                <a href="/Pages">Pages</a>
-                <a href="/Contact">Contact</a>
-            </nav>
-           )
-}
+export default function Navigation(){
+  const navLinks = [
+    { text: "Home", link: "/" },
+    { text: "Menu", link: "/Menu" },
+    { text: "Reservation", link: "/Reservation" },
+    { text: "Pages", link: "/Pages" },
+    { text: "Contact", link: "/Contact" },
+  ];
+
+  return (
+    <nav>
+      {navLinks.map((ele: any) => {
+        return <a key = {ele.text} href={ele.link}>{ele.text}</a>;
+      })}
+    </nav>
+  );
+};
