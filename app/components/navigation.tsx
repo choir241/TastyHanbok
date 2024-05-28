@@ -1,4 +1,4 @@
-export default function Navigation(){
+export default function Navigation() {
   const navLinks = [
     { text: "Home", link: "/" },
     { text: "Menu", link: "/Menu" },
@@ -10,8 +10,12 @@ export default function Navigation(){
   return (
     <nav>
       {navLinks.map((ele: any) => {
-        return <a key = {ele.text} href={ele.link}>{ele.text}</a>;
+        return (
+          <a key={ele.text} href={ele.link}>
+            {ele.text}
+          </a>
+        );
       })}
     </nav>
   );
-};
+}
